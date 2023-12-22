@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='text'>
+        <h3>안녕하세요</h3>
+        <h3>프론트엔드 개발자</h3>
+        <h3>차다훈입니다.</h3>
+      </div>
+      <div className='nav'>
+        <div className='email'>cdhqw@naver.com</div>
+        <div className='stack'>stack</div>
+        <a rel='github' href='https://github.com/chadahun/portfolio.git' target='_blank'><FaGithub fontSize={'50px'} color='white' cursor={'pointer'}/></a>
+        <div></div>
+      </div>
     </div>
   );
 }
